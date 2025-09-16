@@ -1,12 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All About Goku (Dragon Ball Z)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.6; margin: 0; }
+    header, main, footer { max-width: 920px; margin: auto; padding: 1.25rem; }
+    nav a { margin-right: .75rem; }
+    figure { margin: 0 0 1rem 0; }
+    img { max-width: 100%; height: auto; border-radius: 6px; display:block; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .muted { opacity: .85; }
+  </style>
 </head>
 <body>
-    <h1>Profile file</h1>
-    <p>test</p>
+
+  <header>
+    <h1>The Life and Battles of <mark>Goku</mark></h1>
+    <p class="muted">
+      Goku is the heart of <abbr title="Dragon Ball Z">DBZ</abbr>: a Saiyan raised on Earth whose
+      <strong>optimism</strong> and <strong>work ethic</strong> push him past his limits to protect the people he loves.
+      He’s cheerful, competitive, and always chasing the next challenge.
+    </p>
+
+    <nav aria-label="Page sections">
+      <a href="#origins">Origins</a>
+      <a href="#battles">Battles & Forms</a>
+      <a href="#transforms">Transformations</a>
+      <a href="#allies">Allies & Rivals</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <article id="origins">
+      <section>
+        <h2>Early Life &amp; Origins</h2>
+        <p>
+          As a baby, Goku was sent to Earth with a destructive mission, but a head injury changed everything.
+          Raised by Grandpa Gohan in the mountains, he grew into a kind-hearted kid who loved
+          martial arts. Meeting Bulma kicked off his first Dragon Ball adventure, and training under
+          Master Roshi gave him the basics that shaped his future. It’s simple: he kept showing up,
+          kept learning, and kept getting better—little by little, then all at once.
+        </p>
+      </section>
+    </article>
+
+    <article id="battles">
+      <section>
+        <h2>Legendary Battles &amp; Breakthroughs</h2>
+        <p>
+          Through foes like Vegeta, Frieza, Cell, and Majin Buu, Goku’s mindset stayed the same:
+          improve, adapt, and protect. Winning matters, but what really drives him is testing his limits.
+          Many of his biggest leaps, like the first time he went Super Saiyan, came when he was pushed
+          to the edge. That mix of curiosity and grit is why he keeps saving Earth… and sometimes the
+          whole universe. <em>Power with purpose</em> sums him up well.
+        </p>
+      </section>
+    </article>
+
+    <article id="transforms">
+      <section>
+        <h3>Goku’s Transformations (Ordered List)</h3>
+        <ol>
+          <li>Super Saiyan</li>
+          <li>Super Saiyan 2</li>
+          <li>Super Saiyan 3</li>
+          <li>Super Saiyan God</li>
+          <li>Super Saiyan Blue</li>
+          <li>Ultra Instinct</li>
+        </ol>
+      </section>
+    </article>
+
+    <article id="allies">
+      <section>
+        <h3>Allies &amp; Rivals (Unordered List)</h3>
+        <ul>
+          <li>Vegeta ; rival and teammate</li>
+          <li>Piccolo ; mentor-turned-ally</li>
+          <li>Krillin ; childhood friend</li>
+          <li>Master Roshi ; first teacher</li>
+          <li>Chi-Chi ; wife</li>
+          <li>Gohan &amp; Goten ; his sons</li>
+        </ul>
+        <p>
+          Want the deep lore? Start with the
+          <a href="https://dragonball.fandom.com/wiki/Goku" target="_blank" rel="noopener noreferrer">Goku wiki page</a>
+          and the original creator’s notes from
+          <a href="https://www.shonenjump.com/" target="_blank" rel="noopener noreferrer">Shonen Jump</a>.
+        </p>
+      </section>
+    </article>
+
+    <article id="gallery">
+      <section>
+        <h3>Gallery (Offline Images)</h3>
+        <div class="gallery">
+          <figure>
+            <img src="images/goku-ssj.jpeg" alt="Goku in Super Saiyan form">
+            <figcaption>First Super Saiyan moment, pure shock and focus.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/goku-ultra-instinct.jpeg" alt="Goku in Ultra Instinct form with glowing aura">
+            <figcaption>Ultra Instinct: calm mind, precise motion.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/goku-nimbus.jpeg" alt="Kid Goku riding the Flying Nimbus cloud">
+            <figcaption>Kid Goku on Nimbus, where the journey began.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section aria-label="Optional video">
+        <h4>Iconic Scene (Optional Video)</h4>
+        <p class="muted">
+          A short clip that shows why Goku inspires so many fans:
+        </p>
+        <div style="aspect-ratio:16/9; max-width: 920px;">
+          <iframe
+            width="100%" height="100%"
+            src="https://www.youtube.com/embed/_3qLkKqV3wU"
+            title="Goku Super Saiyan (clip)"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+    </article>
+
+  </main>
+
+  <footer>
+    <address>
+      Author: <a href="mailto:saud@example.com">Saud Alhogbani</a>
+    </address>
+    <p class="muted">
+      This page is a class assignment. Built with plain HTML and a little inline CSS for layout. Run it
+      through the <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C HTML Validator</a>
+      before submitting.
+    </p>
+  </footer>
+
 </body>
 </html>
